@@ -1,0 +1,45 @@
+package ABC.data;
+
+public class Individual {
+//1. Hỏi tại sao ko khai báo nhiều lớp static như v được?
+    static class People {
+        enum Gender {
+            MALE, FEMALE, UNKNOWN
+        }
+
+        String name;
+        int age;
+        Gender gender;
+
+        public void displayInfor() {
+            System.out.printf("------ Name: %s ------\n", this.name);
+            System.out.printf("-- Age: %s\n", this.age);
+            System.out.printf("-- Gender: %s\n", this.gender);
+        }
+    }
+
+    static class Student extends People{
+        String studentID;
+        int grade;
+
+        static void study(){
+            System.out.println("Studying");
+        }
+
+    }
+
+    static class Teacher extends People{
+
+        String employeeID;
+        String subject;
+
+        static void teach(){
+            System.out.println("Teaching");
+        }
+        
+        teacher(String name, ){
+
+        }
+    }
+    
+}

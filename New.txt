@@ -1,1 +1,4 @@
 1. Array in school
+mvn archetype:generate -D"groupId=ABC" -D"artifactId=basicSQL" -D"archetypeArtifactId=maven-archetype-quickstart" -D"archetypeVersion=1.4" -D"interactiveMode=false"
+2. BasicSQL
+mvn archetype:generate -D"groupId=ABC" -D"artifactId=basicSQL" -D"archetypeArtifactId=maven-archetype-quickstart" -D"archetypeVersion=1.4" -D"interactiveMode=false"
