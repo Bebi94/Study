@@ -1,0 +1,11 @@
+create database film_manage;
+use film_manage;
+create table movies (
+    id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    title VARCHAR (255),
+    genre VARCHAR (255),
+    yearOfRelease INTEGER
+);
+insert into movies (id, title, genre, yearOfRelease) values ('1', 'Bad boy', 'Action', 2015);
+insert into movies (title, genre, yearOfRelease) values ('Tomorrow war', 'Fiction', 2020);
+insert into movies (title, genre, yearOfRelease) values ('Hachi - The Dog', 'Love', 2010);
