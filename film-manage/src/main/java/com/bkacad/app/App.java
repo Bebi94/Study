@@ -21,7 +21,7 @@ import lombok.Getter;
 public class App 
 {
     static final String TABLE_NAME = "movies";
-    static final String DB_URL = "jdbc:mysql://localhost:3306/bkacad_pos?autoReconnect=true&useSSL=false";
+    static final String DB_URL = "jdbc:mysql://localhost:3306/film_manage?autoReconnect=true&useSSL=false";
     static final String USER = "root";
     static final String PASS = "123monkey123";
 

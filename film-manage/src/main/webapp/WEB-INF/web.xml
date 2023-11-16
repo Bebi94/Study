@@ -1,0 +1,35 @@
+<!DOCTYPE web-app PUBLIC
+"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+"http:java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+ <display-name>Film Manage</display-name>
+ <servlet>
+ <servlet-name>addmovie</servlet-name>
+ <servlet-class>com.bkacad.app.model.entities.MovieServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>addmovie</servlet-name>
+ <url-pattern>/addmovie</url-pattern>
+ </servlet-mapping>
+ 
+<display-name>Film Manage</display-name>
+ <servlet>
+ <servlet-name>listmovie</servlet-name>
+ <servlet-class>com.bkacad.app.model.entities.MovieServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>listmovie</servlet-name>
+ <url-pattern>/listmovie</url-pattern>
+ </servlet-mapping>
+
+ <display-name>Film Manage</display-name>
+ <servlet>
+ <servlet-name>deletemovie</servlet-name>
+ <servlet-class>com.bkacad.app.model.entities.DeleteServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>deletemovie</servlet-name>
+ <url-pattern>/deletemovie</url-pattern>
+ </servlet-mapping>
+</web-app>

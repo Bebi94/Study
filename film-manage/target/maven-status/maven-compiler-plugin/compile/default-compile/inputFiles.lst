@@ -1,0 +1,17 @@
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\model\facade\MovieDAO.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\exception\UserNotFoundException.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\exception\DatabaseActionException.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\controller\MovieController.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\model\entities\MovieServlet.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\view\ErrorView.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\view\MovieAddView.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\exception\WrongUserInputException.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\view\AbstractView.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\model\Movie.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\App.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\utils\ViewHelper.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\exception\AbstractException.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\model\entities\DeleteServlet.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\model\implement\DBMovieManger.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\view\MenuView.java
+D:\3. Homework\film-manage\src\main\java\com\bkacad\app\exception\SeverErrorException.java

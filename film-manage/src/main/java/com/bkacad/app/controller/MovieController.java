@@ -18,4 +18,12 @@ public class MovieController {
         movieDAO.addMovie(new Movie(view.title, view.genre, view.yearOfRelease));
         return new MenuView();
     }
+
+     /*public static AbstractView process(String title) throws ServerError, SeverErrorException{
+        movieDAO.deleteMovie(new Movie());
+        return new MenuView();
+    } */
+    
+
+
 }

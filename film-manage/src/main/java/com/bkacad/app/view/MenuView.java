@@ -20,7 +20,7 @@ public class MenuView extends AbstractView{
                 MovieChangeView mcv = new MovieChangeView();
                 mcv.render();
                 break;
-            case "D":
+            /*case "D":
                 MovieDeleteView mdv = new MovieDeleteView();
                 mdv.render();
                 break;
