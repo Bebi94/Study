@@ -53,7 +53,7 @@ public class BookAPIController {
     }
 
     @RequestMapping(value = "/books/page_size/{page_size}/page_num/{page_num}", method = RequestMethod.GET)
-    public ResponseEntity<Object> getBooksBySize(@PathVariable Integer page_size, Integer page_num) {
+    public ResponseEntity<Object> getBooksBySize(@PathVariable Integer page_size, @PathVariable Integer page_num) {
         
         return new ResponseEntity<Object>(bookDAO.showBooksBySize(page_size, page_num), HttpStatus.OK);
     }

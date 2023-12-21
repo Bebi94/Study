@@ -1,13 +1,17 @@
 package com.mykyong.common.models.dao;
 
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import javax.management.Query;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.support.PagedListHolder;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.mykyong.common.models.entity.Book;
 
@@ -21,6 +25,8 @@ public class BookImplement implements BookDAO {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
+
+   
 
     @Override
     public void createBook(Book book) {
@@ -75,14 +81,17 @@ public class BookImplement implements BookDAO {
     @Override
     public List<Book> showBooksBySize(Integer page_size, Integer page_num) {
        
-        Integer need = page_num*page_size;
+        String sql="select * from books limit " +page_size+ " offset " + ((page_num-1)*page_size);
+       
+       return jdbcTemplate.query(
+                sql,
+                (rs, rowNum) -> new Book()
+                .id(rs.getInt("id"))
+                .title(rs.getString("title"))
+                .author(rs.getString("author"))
+                .yearOfRelease(rs.getInt("yearOfRelease")));
+
         
-        List <Book> books = new ArrayList<Book>();
-       for(Integer i = need - page_size; i < need; i ++){
-            Book book = findBookByID(i);
-            books.add(book);
-       }
-       return books;
     }
 
 }
